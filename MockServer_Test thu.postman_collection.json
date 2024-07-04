@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "6bcda455-44d8-4622-8e99-d4f639cd3bdc",
+		"name": "MockServer_Test thu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10070648"
+	},
+	"item": [
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/CreateUser",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"CreateUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/CreateUser",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"CreateUser"
+							]
+						}
+					},
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "Create sucessfully"
+				}
+			]
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/UpdateUser",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"UpdateUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/UpdateUser",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"UpdateUser"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "Update successfully"
+				}
+			]
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/DeleteUser",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"DeleteUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/DeleteUser",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"DeleteUser"
+							]
+						}
+					},
+					"code": 204,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "Delete successfully"
+				}
+			]
+		},
+		{
+			"name": "GetUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"clientName\": \"tuongvi\",\r\n    \"clientEmail\": \"tuongvi@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/GetUser/4589",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"GetUser",
+						"4589"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"clientName\": \"tuongvi\",\r\n    \"clientEmail\": \"tuongvi@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/GetUser/{{user_id}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"GetUser",
+								"{{user_id}}"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{{user_id}}\r\n//se hien thi cai gi dc nhap vao trong URL"
+				}
+			]
+		},
+		{
+			"name": "test_mock",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"clientName\": \"tuongvi\",\r\n    \"clientEmail\": \"tuongvi@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://postman-echo.com/get?test",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "test",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "mock_sample",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientName\": \"tuongvi\",\r\n    \"clientEmail\": \"tuongvi@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://postman-echo.com/get",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"get"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 04 Jul 2024 04:41:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "772"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.25.3"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"304-5K2nRvReVScOHPw2+0IQqO8jpbs\""
+						},
+						{
+							"key": "set-cookie",
+							"value": "sails.sid=s%3A3vAGw4SKNUUxxvqjKMBYVhefpBSlIGx6.Llq69y3LhRl8ExhZ%2B6HKJjjqZNluOh1PECiLBL%2BVX3o; Path=/; HttpOnly"
+						}
+					],
+					"cookie": [],
+					"body": "{\r\n    \"clientName\": \"tuongvi\",\r\n    \"clientEmail\": \"tuongvi@example.com\"\r\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://988aafa6-4d0d-47e3-9a8a-c58b8cc6a4ea.mock.pstmn.io"
+		}
+	]
+}
